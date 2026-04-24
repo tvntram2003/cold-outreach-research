@@ -51,9 +51,9 @@ for author, video_list in videos.items():
     for video_id, title in video_list:
         print(f"Đang lấy: {author} — {title}")
         try:
-            fetcher = YouTubeTranscriptApi()
-            transcript = fetcher.fetch(video_id)
-            full_text = " ".join([entry.text for entry in transcript])
+            # Đoạn này đã được sửa lỗi cú pháp
+            transcript = YouTubeTranscriptApi.get_transcript(video_id)
+            full_text = " ".join([entry['text'] for entry in transcript])
 
             filepath = f"{folder}/{title}.md"
             with open(filepath, "w", encoding="utf-8") as f:
@@ -66,6 +66,6 @@ for author, video_list in videos.items():
             print(f"  Xong: {filepath}")
 
         except Exception as e:
-            print(f"  Loi {video_id}: {e}")
+            print(f"  Lỗi {video_id}: {e}")
 
-print("\nHoan thanh!")
+print("\nHoàn thành!")
