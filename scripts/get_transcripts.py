@@ -1,4 +1,5 @@
 from youtube_transcript_api import YouTubeTranscriptApi
+import os
 
 videos = {
     "eric-nowoslawski": [
@@ -18,18 +19,19 @@ videos = {
         ("c5DvcHlt1c8", "reigniting-outbound-2024"),
     ],
     "alex-vacca": [
-        ("VIDEOID_1", "ten-video-1"),
-        ("VIDEOID_2", "ten-video-2"),
-    ],
-    "jack-reamer": [
-        ("VIDEOID_1", "ten-video-1"),
-        ("VIDEOID_2", "ten-video-2"),
+        ("tavbnQ9Aah8", "mastering-outbound-growth-coldiq-2024"),
+        ("lw_710PtAos", "coldiq-linkedin-success-system-2026"),
     ],
     "patrick-dang": [
-        ("VIDEOID_1", "ten-video-1"),
-        ("VIDEOID_2", "ten-video-2"),
+        ("t0Pq1uRjszI", "ultimate-cold-email-guide-b2b-2024"),
+        ("W-znS2Tkl8o", "top-5-cold-email-tips-b2b-saas"),
     ],
     "patrick-spychalski": [
+        ("Pfk4YMulfsc", "clay-agency-secrets-40m-pipeline-2025"),
+        ("PQ9WSCD9x24", "best-clay-outbound-tactics-2025"),
+    ],
+    # Jack Reamer, Vin Matano, Michel Lieben - cần tìm thủ công
+    "jack-reamer": [
         ("VIDEOID_1", "ten-video-1"),
         ("VIDEOID_2", "ten-video-2"),
     ],
