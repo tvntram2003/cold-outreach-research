@@ -84,7 +84,7 @@ Experts selected based on:
 
 ## 10. Michel Lieben — ColdIQ
 - **LinkedIn:** https://linkedin.com/in/michel-lieben
-- **YouTube:** https://youtube.com/@coldiq
+-  **YouTube:** https://youtube.com/@michellieben
 - **Collected:** 2025-04-24
 - **Why chosen:** Co-founder of ColdIQ ($6M ARR). Focuses on signal-based
   outreach — using intent triggers (funding, job changes, tech stack) to
