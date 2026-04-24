@@ -30,32 +30,25 @@ videos = {
         ("Pfk4YMulfsc", "clay-agency-secrets-40m-pipeline-2025"),
         ("PQ9WSCD9x24", "best-clay-outbound-tactics-2025"),
     ],
-    # Jack Reamer, Vin Matano, Michel Lieben - cần tìm thủ công
     "jack-reamer": [
-        ("VIDEOID_1", "ten-video-1"),
-        ("VIDEOID_2", "ten-video-2"),
+        ("YZg1uBWN2pA", "truth-about-cold-email-jack-reamer"),
+        ("8gBcbQcNvJo", "cold-outreach-podcast-breakdown"),
     ],
     "vin-matano": [
-        ("VIDEOID_1", "ten-video-1"),
-        ("VIDEOID_2", "ten-video-2"),
+        ("sT3PfNQVa0M", "close-90-percent-leads-without-cold-call-2024"),
+        ("tpTmil_Ydss", "cold-calls-ai-bots-demandbase-2024"),
     ],
     "michel-lieben": [
-        ("VIDEOID_1", "ten-video-1"),
-        ("VIDEOID_2", "ten-video-2"),
+        ("j0tm-2eKgs0", "cold-outreach-for-beginners-coldiq-2024"),
+        ("R9qgcrGPfsc", "build-scale-gtm-engineering-coldiq-2025"),
     ],
 }
-
-import os
 
 for author, video_list in videos.items():
     folder = f"research/youtube-transcripts/{author}"
     os.makedirs(folder, exist_ok=True)
 
     for video_id, title in video_list:
-        if video_id.startswith("VIDEOID"):
-            print(f"  Bỏ qua (chưa có ID): {author} — {title}")
-            continue
-
         print(f"Đang lấy: {author} — {title}")
         try:
             fetcher = YouTubeTranscriptApi()
